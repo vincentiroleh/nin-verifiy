@@ -79,6 +79,12 @@ const Controller = {
         } catch (error) {
             res.status(500).json(error)
         }
+    },
+
+    // Get total amount of funds from all users
+    async sumWallet(req: Request, res: Response) {
+        const users: any = await User.find({})
+        console.log(users)
     }
 }
 

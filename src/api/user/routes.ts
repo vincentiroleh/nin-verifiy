@@ -12,6 +12,7 @@ router.post('/register', Controller.register);
 router.post('/user', Controller.getUser);
 router.post('/fund', Controller.fundWallet);
 router.post('/link-nin', Controller.linkNin);
+router.get('/wallet-sum', Controller.sumWallet)
 
 
 export default router;
