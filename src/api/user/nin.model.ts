@@ -4,6 +4,7 @@ const { Schema } = mongoose;
 const ninSchema = new Schema({
     ninNumber: {
         type: Number,
+        unique: true,
         require: [true, 'Nin Number required']
     },
     user: {

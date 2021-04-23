@@ -18,10 +18,6 @@ const userSchema = new Schema({
     wallet: {
         type: Number,
         default: 0
-    },
-    nin: {
-        type: Schema.Types.ObjectId,
-        ref: 'Nin'
     }
 }, { timestamps: true });
 
